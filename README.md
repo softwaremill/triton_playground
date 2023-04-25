@@ -26,9 +26,9 @@ bash utils/convert_to_tensorrt.sh
 exit
 ```
 
-Copy exported models into `model-repository`.
+Move exported models into `model-repository`.
 ```bash
-bash utils/copy_models.sh
+bash utils/move_models.sh
 ```
 
 # Run Triton
