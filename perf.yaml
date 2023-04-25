@@ -1,0 +1,16 @@
+concurrency:
+  start: 2
+  stop: 16
+  step: 4
+batch_sizes:
+  start: 1
+  stop: 8
+  step: 2
+instance_group:
+  kind: KIND_GPU
+  count: [1,2]
+max_batch_size: 8
+dynamic_batching:
+  max_queue_delay_microseconds: [100]
+objectives:
+  perf_throughput: 1
