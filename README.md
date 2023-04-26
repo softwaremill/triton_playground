@@ -9,7 +9,7 @@ virtualenv -p python3.10 .venv
 ```bash
 source .venv/bin/activate
 pip install --upgrade pip
-pip install torch
+pip install -r requirements.txt
 ```
 
 # Prepare model-repository
