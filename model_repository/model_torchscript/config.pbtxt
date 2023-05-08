@@ -45,3 +45,16 @@ output [
 dynamic_batching {
   max_queue_delay_microseconds: 100
 }
+
+model_warmup [{
+    name : "warmup sample"
+    batch_size: 1
+    inputs {
+        key: "input__0"
+        value: {
+            data_type: TYPE_FP32
+            dims: [ 3, 224, 224 ]
+            zero_data: true
+        }
+    }
+}]

@@ -48,3 +48,16 @@ instance_group [
     kind: KIND_GPU
   }
 ]
+
+model_warmup [{
+    name : "warmup sample"
+    batch_size: 1
+    inputs {
+        key: "image"
+        value: {
+            data_type: TYPE_FP32
+            dims: [640,480,3]
+            zero_data: true
+        }
+    }
+}]
